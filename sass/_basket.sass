@@ -1,0 +1,142 @@
+.basket
+    margin-top: 100px
+    margin-bottom: 100px
+    &-title
+        margin-bottom: 10px
+        font-weight: 700
+        font-size: 36px
+        color: #303030
+    &-clear
+        display: flex
+        justify-content: end
+        margin-bottom: 10px
+    &-line
+        margin-top: 5px
+        margin-bottom: 15px
+        border: 1px solid #ECECEC
+    &-noproduct
+        text-align: center
+        flex-basis: 76%
+        font-weight: 400
+        font-size: 18px
+        color: #303030
+    &-wrap
+        display: flex
+        align-items: center
+        position: relative
+        margin-bottom: 15px
+        padding-bottom: 5px
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 1px
+            background: #ECECEC
+            bottom: 0
+            left: 0
+        &:last-child
+            &::before
+                width: 0
+    &-box
+        display: flex
+        flex-direction: column
+        padding: 20px
+        background: #FFFFFF
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        &-total
+            padding: 20px
+            background: #FFFFFF
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+            border-radius: 10px
+            &__title
+                margin-bottom: 20px
+                font-weight: 600
+                font-size: 24px
+                color: #000000
+            &__subtitle
+                margin-bottom: 10px
+                font-weight: 400
+                font-size: 18px
+                color: #000000
+            &__price
+                font-weight: 400
+                font-size: 18px
+                color: #000000
+                &-1
+                    font-weight: 500
+                    font-size: 24px
+                    color: #000000
+            &__text
+                display: flex
+                justify-content: space-between
+                align-items: baseline
+            &__line
+                margin-bottom: 20px
+                border: 1px solid #B4B4B4
+            &__all
+                margin-bottom: 20px
+                font-weight: 400
+                font-size: 18px
+                color: #000000
+            &__btn
+                width: 100%
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                color: #FFFFFF
+    &-img
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: 95px
+        height: 125px
+    &-q
+        flex-basis: 10%
+        font-weight: 400
+        font-size: 18px
+        color: #303030
+    &-name
+        flex-basis: 51%
+        font-weight: 400
+        font-size: 18px
+        color: #303030
+    &-price
+        flex-basis: 25%
+        font-weight: 400
+        font-size: 18px
+        color: #303030
+    &-btns
+    &-product
+        position: relative
+        width: 95px
+        height: 91px
+        margin-bottom: 10px
+        img
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            object-fit: contain
+            object-position: center
+            border: 1px solid #a4a4a4
+            padding: 2px
+            border-radius: 5px
+        &-text
+            font-weight: 400
+            font-size: 14px
+            color: #B4B4B4
+            transition: 0.3s
+            width: max-content
+            margin: 0 auto
+            background: none
+            &:hover
+                color: #847CFB
+    &-text
+        display: flex
+        align-items: baseline
+        justify-content: center
+        flex-basis: 86%
+        margin-left: 15px
+    &-plus, &-minus
+        background: none

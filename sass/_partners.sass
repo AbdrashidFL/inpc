@@ -1,0 +1,34 @@
+.partners
+    margin-bottom: 100px
+    &-block
+        &__title
+            margin-bottom: 80px
+            font-weight: bold
+            font-size: 36px
+            color: #303030
+        &__img
+            filter: grayscale(100%)
+            transition: 0.3s
+            &:hover
+                cursor: pointer
+                filter: grayscale(0%)
+        &__logo
+            margin-bottom: 30px
+        &__slider
+            &-item
+                min-height: 100px
+                display: flex !important
+                justify-content: center
+                align-items: center
+        &__prev
+            bottom: 50%
+            margin-bottom: -19px
+            left: 0
+            position: absolute
+            display: none !important
+        &__next
+            bottom: 50%
+            margin-bottom: -19px
+            right: 0
+            position: absolute
+            display: none !important

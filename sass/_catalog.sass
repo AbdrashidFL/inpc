@@ -1,0 +1,225 @@
+.catalog
+    margin-top: 100px
+    margin-bottom: 100px
+    &-title
+        margin-bottom: 20px
+        font-weight: bold
+        font-size: 24px
+        color: #303030
+    &-subtitle
+        margin-bottom: 10px
+        font-weight: 600
+        font-size: 18px
+        color: #303030
+    &-price
+        padding-left: 5px
+        width: 100px
+        border: 1px solid #303030
+        border-radius: 3px
+        &__1
+            margin-right: 10px
+        &__from
+            font-weight: normal
+            font-size: 16px
+            color: #847CFB
+        &__before
+            font-weight: normal
+            font-size: 16px
+            color: #847CFB
+    &-input
+        margin-bottom: 20px
+        display: inline-block
+    &-filter
+        padding: 20px
+        background: #FFFFFF
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        &__name
+            margin-bottom: 10px
+            font-weight: 600
+            font-size: 18px
+            color: #303030
+        &__btns
+        &__mobile
+            margin-bottom: 30px
+            &-btn
+                background: #FFFFFF
+                padding: 10px 15px 10px 15px
+                border-radius: 10px
+                font-weight: bold
+                font-size: 18px
+                color: #303030
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+            &-img
+                width: 24px
+        &__popup
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            display: none
+            justify-content: center
+            align-items: center
+            z-index: 2
+            &-before
+                width: 100%
+                height: 100%
+                position: fixed
+                left: 0
+                right: 0
+                background: rgba(0, 0, 0, 0.5)
+                cursor: pointer
+                z-index: -1
+            &-wrap
+                overflow: scroll
+                height: 500px
+                padding: 30px
+                background: #FFFFFF
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+                border-radius: 10px
+                position: relative
+                z-index: 1
+        &__wrap
+            &-form
+                &-title                    
+                    font-weight: 700
+                    font-size: 24px
+                    color: #303030
+                &-subtitle
+                    margin-bottom: 10px
+                    font-weight: 600
+                    font-size: 18px
+                    color: #303030
+                &-from, &-before
+                    margin-bottom: 5px
+                    font-weight: normal
+                    font-size: 16px
+                    color: #847CFB
+                &-name
+                    margin-bottom: 10px
+                    font-weight: 600
+                    font-size: 18px
+                    color: #303030
+                &-box
+                    margin-bottom: 10px
+                &-price
+                    margin-bottom: 10px
+                    border: 1px solid #303030
+                    border-radius: 3px
+                &-btn
+                    margin-bottom: 15px
+                    padding: 5px 15px
+                    background:#C4C4C4
+                    border-radius: 5px
+                    font-weight: 600
+                    font-size: 16px
+                    color: #303030
+                    transition: 0.3s
+                    &:hover
+                        color: #ffffff
+                        background-color:#847CFB
+                &-select
+                    width: 100%
+                    padding: 15px 0px 15px 10px
+                    font-weight: 400
+                    font-size: 18px
+                    color: #FFFFFF
+                    background: #847CFB
+                    border-radius: 5px
+                    border: none
+                    appearance: none
+                    background-image: url(../img/admin/arrow.png)
+                    background-repeat: no-repeat
+                    background-position-x: right
+                    background-position-y: center
+    &-btn
+        margin-bottom: 15px
+        padding: 5px 0px
+        background:#C4C4C4
+        border-radius: 5px
+        font-weight: 600
+        font-size: 16px
+        color: #303030
+        transition: 0.3s
+        width: 100%
+        &__active
+            color: #ffffff
+            background-color:#847CFB
+        &__brand
+            margin-bottom: 15px
+            padding: 5px 0px
+            background:#C4C4C4
+            border-radius: 5px
+            font-weight: 600
+            font-size: 16px
+            color: #303030
+            transition: 0.3s
+            width: 100%
+            &-active
+                color: #ffffff
+                background-color:#847CFB
+    &-card
+        z-index: 1
+        display: flex
+        flex-wrap: wrap
+        &__block
+            position: relative
+            margin-right: 20px  
+            width: 255px
+            height: 400px
+            &-img
+                width: 100%
+                height: 250px
+                margin-bottom: 10px
+                position: relative
+                img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+                    object-position: center
+            &-name
+                margin-bottom: 15px
+                font-weight: 400
+                font-size: 16px
+                color: #303030
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+            &-text
+                display: flex
+                justify-content: space-between
+                align-items: center
+                color: #73BE6F
+            &-info
+                font-weight: 600
+                font-size: 12px
+                &-1
+                    color: #73BE6F
+                &-2
+                    color: #D90613
+            &-price
+                font-weight: 600
+                font-size: 22px
+                color: #847CFB
+            &-btn
+                margin-top: 15px
+                display: none
+                width: 100%
+            &-wrap
+                z-index: 1
+                position: absolute
+                background: #FFFFFF
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+                border-radius: 10px
+                padding: 10px 10px 15px 10px
+                cursor: pointer
+                &:hover .catalog-card__block-btn
+                    display: flex
+                    z-index: 3
+                &:hover
+                    z-index: 3

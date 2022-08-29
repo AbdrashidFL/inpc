@@ -1,0 +1,86 @@
+.popup
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: none
+    justify-content: center
+    align-items: center
+    z-index: 2
+    &-open
+        display: flex
+    &-before
+        width: 100%
+        height: 100%
+        position: fixed
+        left: 0
+        right: 0
+        background: rgba(0, 0, 0, 0.5)
+        cursor: pointer
+        z-index: -1
+    &-wrap
+        padding: 30px
+        background: #FFFFFF
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+        border-radius: 10px
+        position: relative
+        z-index: 1
+        &__form
+            &-input
+                display: block
+                margin-top: 30px
+                width: 100%
+                padding: 12px 0 12px 20px
+                border: 1px solid #ECECEC
+                border-radius: 5px
+                outline: none
+            &-reg
+                display: none
+            &-change
+                margin-top: 30px
+                display: block
+            &-btns
+                display: flex
+                align-items: center
+                margin-top: 30px
+            &-btn
+                width: 160px
+                height: 49px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: 600
+                font-size: 18px
+                line-height: 21px
+                color: #FFFFFF
+                background: #847CFB
+                border-radius: 5px
+            &-btn2
+                background: #EDEDED
+                color: #303030
+                margin-left: 30px
+            &-btn3
+                display: none
+    &-btns
+        display: flex
+        &__btn
+            width: 216px
+            height: 51px
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            color: #FFFFFF
+            background: #ECECEC
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            &-login
+                margin-right: 30px
+                background: #847CFB
+            &-reg
+                color: #303030
+        &__active
+            background: #847CFB
+            color: #fff

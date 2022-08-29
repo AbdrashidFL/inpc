@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>InPc - Все для ПК</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-xl-center align-items-lg-center">
+                <div class="col-xl-2 col-lg-2 col-6">
+                    <a href="index.html" class="header-top__logo">
+                        <svg width="136" height="60" viewBox="0 0 136 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M69.956 43.6472H64.088V21.6872H69.956V43.6472ZM79.5787 26.2592V28.5272C81.4987 26.7992 83.4067 25.9352 85.3027 25.9352C87.1747 25.9352 88.5547 26.4632 89.4427 27.5192C90.3307 28.5752 90.7747 30.2672 90.7747 32.5952V43.6472H85.0147V34.2152C85.0147 33.1112 84.8707 32.3552 84.5827 31.9472C84.3187 31.5152 83.7907 31.2992 82.9987 31.2992C81.7747 31.2992 80.6347 31.9592 79.5787 33.2792V43.6472H73.8187V26.2592H79.5787Z"
+                                fill="#303030" />
+                            <path
+                                d="M94.5333 21.6872H103.317C106.413 21.6872 108.789 22.4312 110.445 23.9192C112.125 25.3832 112.965 27.4832 112.965 30.2192C112.965 32.9072 112.149 34.9832 110.517 36.4472C108.885 37.8872 106.569 38.6072 103.569 38.6072H100.401V43.6472H94.5333V21.6872ZM100.401 33.6392H103.533C104.733 33.6392 105.657 33.3512 106.305 32.7752C106.953 32.1752 107.277 31.3232 107.277 30.2192C107.277 29.0912 106.929 28.2272 106.233 27.6272C105.537 27.0272 104.553 26.7272 103.281 26.7272H100.401V33.6392ZM133.121 37.0952L135.029 41.4512C132.005 43.1312 128.885 43.9712 125.669 43.9712C122.309 43.9712 119.657 42.9872 117.713 41.0192C115.793 39.0512 114.833 36.2792 114.833 32.7032C114.833 29.0792 115.817 26.2832 117.785 24.3152C119.753 22.3232 122.501 21.3272 126.029 21.3272C128.957 21.3272 131.693 21.9872 134.237 23.3072L132.473 27.6992C129.881 26.9552 127.829 26.5832 126.317 26.5832C122.621 26.5832 120.773 28.6232 120.773 32.7032C120.773 34.5032 121.241 35.9552 122.177 37.0592C123.137 38.1632 124.397 38.7152 125.957 38.7152C128.045 38.7152 130.433 38.1752 133.121 37.0952Z"
+                                fill="#847CFB" />
+                            <path d="M1 7.93803V52.8779L37 58.8699L52 55.8739V4.94204L37 1.94604L1 7.93803Z" stroke="black"
+                                stroke-width="2" />
+                            <path d="M37 1.94604V58.8699" stroke="black" stroke-width="2" />
+                            <path d="M46 31.906V46.886" stroke="black" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-xl-6 offset-xl-1 col-lg-7 col-6">
+                    <div class="header-top__nav hidden-mobile">
+                        <a href="catalog.html">Каталог</a>
+                        <a href="delivery.html">Доставка</a>
+                        <a href="about.html">О нас</a>
+                        <a href="#footer">Контакты</a>
+                    </div>
+                    <div class="menu hidden-pc">
+                        <a class="menu-links"><span></span></a>
+                    </div>
+                    <div class="menu-popup hidden-pc">
+                        <a href="catalog.html">Каталог</a>
+                        <a href="delivery.html">Доставка</a>
+                        <a href="about.html">О нас</a>
+                        <a href="#footer">Контакты</a>
+                    </div>
+                </div>
+                <div class="col-xl-2 offset-xl-1 col-lg-3">
+                    <div class="header-top__contact">
+                        <a href="tel:+77082932724" class="header-top__contact-num">+7 708 293 27 24</a>
+                        <p class="header-top__contact-time">с 8:00 до 00:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3 col-6 order-0 order-lg-0">
+                        <button class="header-bot__btn">
+                            <div class="header-bot__comp">
+                                <a class="header-bot__comp-line"><span></span></a>
+                            </div>
+                            <p>КОМПЛЕКТУЮЩИЕ</p>
+                        </button>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 order-3 order-lg-1">
+                        <div class="header-bot__search">
+                            <input type="text" class="header-bot__search-input">
+                            <button class="header-bot__search-btn">
+                                <img src="img/header/loupe.png" alt="">
+                                <p>Найти</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-3 order-1 order-lg-2">
+                        <button class="header-bot__login">
+                            <img src="img/header/avatar.png" alt="">
+                            <p>ВОЙТИ</p>
+                        </button>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-3 order-2 order-lg-3">
+                        <button class="header-bot__basket"><img src="img/header/basket.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-10">
+                    <div class="header-product">
+                        <a class="header-product__block">
+                            <div class="header-product__block-img"><img src="img/header/comp-1.png" alt=""></div>
+                            <p class="header-product__block-text">Процессоры</p>
+                        </a>
+                        <a class="header-product__block">
+                            <div class="header-product__block-img"><img src="img/header/comp-2.png" alt=""></div>
+                            <p class="header-product__block-text">Материнская плата</p>
+                        </a>
+                        <a class="header-product__block">
+                            <div class="header-product__block-img"><img src="img/header/comp-3.png" alt=""></div>
+                            <p class="header-product__block-text">Оперативная память</p>
+                        </a>
+                        <a class="header-product__block">
+                            <div class="header-product__block-img"><img src="img/header/comp-4.png" alt=""></div>
+                            <p class="header-product__block-text">Видеокарты</p>
+                        </a>
+                        <a class="header-product__block">
+                            <div class="header-product__block-img"><img src="img/header/comp-5.png" alt=""></div>
+                            <p class="header-product__block-text">Жесткие диски</p>
+                        </a>
+                        <a class="header-product__block">
+                            <div class="header-product__block-img"><img src="img/header/comp-6.png" alt=""></div>
+                            <p class="header-product__block-text">SSD диски</p>
+                        </a>
+                        <a class="header-product__block">
+                            <div class="header-product__block-img"><img src="img/header/comp-7.png" alt=""></div>
+                            <p class="header-product__block-text">Блоки питания</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="basic">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <p class="basic-title">Холодного ветра в ваш ПК</p>
+                </div>
+                <div class="col-xl-7 col-lg-7">
+                    <p class="basic-subtitle">Производительные комплектующие для вашего компьютера от проверенных производителей.<br>На ваш вкус и выбор!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-2">
+                    <a href="catalog.html" class="basic-btn btn">К покупкам</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- basisc -->
+    <div class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5">
+                    <p class="product-title">Популярные товары</p>
+                </div>
+                <div class="col-xl-1 offset-xl-5 col-lg-2 offset-lg-3 col-6">
+                    <div class="product-slider__prev">
+                        <svg width="19" height="39" viewBox="0 0 19 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.8099 38.259C15.4053 38.2604 15.0055 38.1722 14.6399 38.0008C14.2744 37.8295 13.9523 37.5794 13.6974 37.269L0.616118 21.2137C0.217771 20.7349 3.44338e-06 20.1343 3.33303e-06 19.5145C3.22269e-06 18.8947 0.21777 18.2942 0.616117 17.8154L14.1578 1.76012C14.6175 1.21366 15.2781 0.870014 15.9943 0.804777C16.7104 0.73954 17.4235 0.958057 17.9766 1.41226C18.5296 1.86645 18.8775 2.51913 18.9435 3.2267C19.0095 3.93427 18.7884 4.63878 18.3286 5.18524L6.22238 19.5279L17.9224 33.8706C18.2536 34.2634 18.464 34.7417 18.5286 35.2489C18.5933 35.7561 18.5096 36.271 18.2873 36.7326C18.0651 37.1943 17.7137 37.5834 17.2746 37.8539C16.8356 38.1244 16.3273 38.265 15.8099 38.259Z"
+                                fill="#847CFB" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-xl-1 col-lg-2 col-6">
+                    <div class="product-slider__next">
+                        <svg width="19" height="39" viewBox="0 0 19 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.8099 38.259C15.4053 38.2604 15.0055 38.1722 14.6399 38.0008C14.2744 37.8295 13.9523 37.5794 13.6974 37.269L0.616118 21.2137C0.217771 20.7349 3.44338e-06 20.1343 3.33303e-06 19.5145C3.22269e-06 18.8947 0.21777 18.2942 0.616117 17.8154L14.1578 1.76012C14.6175 1.21366 15.2781 0.870014 15.9943 0.804777C16.7104 0.73954 17.4235 0.958057 17.9766 1.41226C18.5296 1.86645 18.8775 2.51913 18.9435 3.2267C19.0095 3.93427 18.7884 4.63878 18.3286 5.18524L6.22238 19.5279L17.9224 33.8706C18.2536 34.2634 18.464 34.7417 18.5286 35.2489C18.5933 35.7561 18.5096 36.271 18.2873 36.7326C18.0651 37.1943 17.7137 37.5834 17.2746 37.8539C16.8356 38.1244 16.3273 38.265 15.8099 38.259Z"
+                                fill="#847CFB" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="product-slider">
+                <div class="product-slider__block">
+                    <div class="product-slider__block-wrap">
+                        <div class="product-slider__block-img"><img src="img/catalog/catalog/asrock-1.png" alt=""></div>
+                        <p class="product-slider__block-name">Процессор AMD Ryzen 9-5900X (C12/124T, 64M, 3.7 up to 4.8GHz) AM4 OEM</p>
+                        <div class="product-slider__block-text">
+                            <p class="product-slider__block-price">1 999 999 ТГ</p>
+                            <p class="product-slider__block-info product-slider__block-info-1">Есть в наличие</p>
+                        </div>
+                        <button class="product-slider__block-btn btn">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-slider__block">
+                    <div class="product-slider__block-wrap">
+                        <div class="product-slider__block-img"><img src="img/catalog/catalog/asrock-1.png" alt=""></div>
+                        <p class="product-slider__block-name">Процессор AMD Ryzen 9-5900X (C12/124T, 64M, 3.7 up to 4.8GHz) AM4 OEM</p>
+                        <div class="product-slider__block-text">
+                            <p class="product-slider__block-price">299 999 ТГ</p>
+                            <p class="product-slider__block-info product-slider__block-info-2">Нет в наличие</p>
+                        </div>
+                        <button class="product-slider__block-btn btn">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-slider__block">
+                    <div class="product-slider__block-wrap">
+                        <div class="product-slider__block-img"><img src="img/catalog/catalog/asrock-1.png" alt=""></div>
+                        <p class="product-slider__block-name">Процессор AMD Ryzen 9-5900X (C12/124T, 64M, 3.7 up to 4.8GHz) AM4 OEM</p>
+                        <div class="product-slider__block-text">
+                            <p class="product-slider__block-price">299 999 ТГ</p>
+                            <p class="product-slider__block-info product-slider__block-info-1">Есть в наличие</p>
+                        </div>
+                        <button class="product-slider__block-btn btn">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="about">
+        <div class="about-block">
+    
+            <div class="container">
+    
+                <p class="about-block__title">О нас</p>
+    
+                <div class="row align-items-center">
+    
+    
+                    <div class="order-sm-last col-sm-12 col-md-6 col-xl-5 offset-xl-1">
+                        <div class="about-block__img">
+                            <img src="img/about/build.png" alt="build" class="about-block__build">
+                        </div>
+                    </div>
+    
+                    <div class="order-sm-first col-sm-12 col-md-6 col-xl-6">
+                        <div class="about-block__text">
+                            <p class="about-block__descr">InPC – самый крупный в Казахстане магазин по ассортименту
+                                компьютерных комплектующиx и лидеров продаж компьютерной техники в стране.</p>
+                            <div class="about-block__descr"></div>
+                            <p class="about-block__descr">Благодаря тесным партнёрским отношениям с AMD, Nvidia, Intel и
+                                др., InPC предлагает свыше 10 000 наименований сертифицированной продукции.</p>
+                            <a href="about.html" class="about-block__btn btn">Подробнее</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+    <!-- about -->
+    <section class="partners">
+        <div class="partners-block">
+    
+            <div class="container">
+    
+                <p class="partners-block__title">Наши партнеры</p>
+    
+                <div class="row align-items-center">
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/1.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/2.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/3.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/4.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/5.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/6.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/7.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/8.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/9.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/10.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/11.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-xl-3 col-sm-6 col-6">
+                        <div class="partners-block__logo">
+                            <img src="img/partners/12.png" alt="img" class="partners-block__img">
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+    <!-- partners -->
+    <div id="wrapMap">
+        <iframe class="map"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa3745815bc9a998cb24490db01fb80552548f6c0825b310b367fea9c812aec73&amp;source=constructor"></iframe>
+    </div>
+    <!-- map -->
+    <section class="footer" id="footer">
+        <div class="footer-block">
+    
+            <div class="container">
+    
+                <div class="footer-block__lineup"></div>
+    
+                <div class="row">
+    
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-xl-3">
+                        <p class="footer-block__title">Контакты</p>
+                        <p class="footer-block__subtitle">Номер телефона</p>
+                        <a href="tel:+77082932724" class="footer-block__descr-bg"><span class="footer-block__hover">+7 777
+                                555 55 11</span></a>
+                        <p class="footer-block__subtitle">Электронная почта</p>
+                        <a href="mailto:mail@htmlacademy.ru" class="footer-block__descr-mail">inpc@gmail.com</a>
+                        <p class="footer-block__subtitle">Адрес магазина</p>
+                        <p class="footer-block__descr">987654, с. Казахстан, г. Алматы ул. Аксай, Маречка, д. 39</p>
+                    </div>
+    
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-xl-3">
+                        <p class="footer-block__title">Принимаем заказы</p>
+                        <p class="footer-block__subtitle">Понедельник-пятница:</p>
+                        <p class="footer-block__descr-bg">с 8:00 до 00:00</p>
+                        <p class="footer-block__subtitle">Суббота, воскресенье:</p>
+                        <p class="footer-block__descr">выходной</p>
+                    </div>
+    
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-xl-3">
+                        <p class="footer-block__title">Покупателям</p>
+                        <a href="catalog.html" class="footer-block__descr-link">Каталог</a>
+                        <a href="delivery.html" class="footer-block__descr-link">Доставка</a>
+                        <a href="about.html" class="footer-block__descr-link">О нас</a>
+                    </div>
+    
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-xl-3">
+                        <p class="footer-block__title">Наблюдайте за нами</p>
+                        <a href="#" class="footer-block__icon"><img src="img/footer/instagram.png" alt="instagram"></a>
+                        <a href="#" class="footer-block__icon"><img src="img/footer/facebook.png" alt="facebook"></a>
+                        <a href="#" class="footer-block__icon"><img src="img/footer/youtube.png" alt="youtube"></a>
+                    </div>
+    
+                </div>
+    
+                <div class="footer-block__linedown"></div>
+                <div class="footer-block__right">© 2022 Все, что касается InPC. Все права защищены.</div>
+    
+            </div>
+    
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="popup popup-enter">
+        <div class="popup-before"></div>
+        <div class="popup-wrap">
+            <div class="popup-btns">
+                <button class="popup-btns__btn popup-btns__btn-login" id="popup-btns__btn-login">Вход</button>
+                <button class="popup-btns__btn popup-btns__btn-reg" id="popup-btns__btn-reg">Регистрация</button>
+            </div>
+            <div class="popup-wrap__form">
+                <input type="text" placeholder="E-mail:" class="popup-wrap__form-input popup-wrap__form-login" id="popup-wrap__form-login1">
+                <input type="text" placeholder="Пароль" class="popup-wrap__form-input popup-wrap__form-login" id="popup-wrap__form-login2">
+                <input type="text" placeholder="E-mail:" class="popup-wrap__form-input popup-wrap__form-reg" id="popup-wrap__form-reg3">
+                <input type="text" placeholder="Пароль" class="popup-wrap__form-input popup-wrap__form-reg" id="popup-wrap__form-reg5">
+                <div class="popup-wrap__form-btns">
+                    <button class="popup-wrap__form-btn1 popup-wrap__form-btn" id="popup-wrap__form-btn1">Войти</button>
+                    <button class="popup-wrap__form-btn3 popup-wrap__form-btn" id="popup-wrap__form-btn3">Регистрация</button>
+                    <button class="popup-wrap__form-btn2 popup-wrap__form-btn" id="popup-wrap__form-btn2">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popup -->
+    <script src="js/popup.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,696 @@
+@media screen and (max-width: 1440px)
+    .basic
+        background-size: 40% 100%
+@media screen and (max-width: 1024px)
+    .header
+        &-top
+            &__nav
+                a
+                    margin-left: 0
+            &__contact
+                &-num
+                    display: block
+        &-bot
+            &__btn
+                p
+                    font-size: 16px
+    .basic
+        background-position: bottom right
+        background-size: 45% 75%
+        &-title
+            font-size: 48px
+        &-subtitle
+            font-size: 22px
+    .product
+        &-slider
+            &__block
+                &-name
+                    font-size: 16px
+                &-price
+                    font-size: 22px
+    .footer
+        &-block
+            &__title
+                font-size: 20px
+    .slider
+        display: block
+    .profile
+        &-history
+            &__title
+                &-text
+                    font-size: 14px
+                &-1
+                    margin-right: 10px
+                &-2
+                    margin-right: 170px
+                &-3
+                &-4
+                &-5
+            &__info
+                &-1
+                    min-width: 84px
+                    max-width: 84px
+                &-2
+                    min-width: 200px
+                    max-width: 200px
+                &-3
+                    min-width: 76px
+                    max-width: 76px
+                &-4
+                    margin-right: 11px
+    .shop
+        &-history
+            &__title
+                &-text
+                    font-size: 14px
+                &-1
+                    margin-right: 10px
+                &-2
+                    margin-right: 130px
+                &-3
+                    margin-right: 55px
+            &__info
+                &-1
+                    min-width: 84px
+                    max-width: 84px
+                &-2
+                    min-width: 150px
+                    max-width: 150px
+                &-3
+                    min-width: 90px
+                    max-width: 90px
+                &-4
+                    margin-right: 11px
+    .catalog
+        &-card
+            &__block
+                margin-right: 15px
+                width: 215px
+                &-info
+                    font-size: 10px
+                &-price
+                    font-size: 18px
+    .basket
+        &-box
+            &-total
+                &__price-1
+                    font-size: 18px
+                &__title
+                    font-size: 20px
+                &__subtitle
+                    font-size: 16px
+                &__price
+                    font-size: 16px
+@media screen and (max-width: 576px)
+    html
+        overflow-x: hidden
+    .hidden
+        &-mobile
+            display: none
+        &-pc
+            display: block
+    .menu
+        display: flex
+        justify-content: right
+        align-items: center
+        margin-top: 10px
+        &-links
+            width: 35px
+            height: 35px
+            transition: all 0.5s
+            cursor: pointer
+            z-index: 3
+            position: relative
+            display: block
+            span
+                width: 35px
+                height: 5px
+                top: 50%
+                left: 50%
+                margin-top: -2.5px
+                margin-left: -17.5px
+                position: absolute
+                transition: all 0.5s
+                background: #303030
+                &::before
+                    content: ''
+                    width: 35px
+                    height: 5px
+                    top: 50%
+                    left: 50%
+                    margin-top: -14px
+                    margin-left: -17.5px
+                    position: absolute
+                    background-color: #303030
+                    transition: all 0.5s
+                &::after
+                    content: ''
+                    width: 35px
+                    height: 5px
+                    top: 50%
+                    left: 50%
+                    margin-top: 8px
+                    margin-left: -17.5px
+                    position: absolute
+                    background-color: #303030
+                    transition: all 0.5s
+            &__active
+                transition: all 0.5s
+                span
+                    background-color: transparent
+                    &::before
+                        transform: rotate(135deg)
+                        margin-top: 0
+                        background-color: #FFFFFF
+                    &::after
+                        transform: rotate(-135deg)
+                        margin-top: 0
+                        background-color: #FFFFFF
+        &-popup
+            height: 312px
+            padding: 75px 0 0 55px
+            position: absolute
+            top: -30px
+            right: 0
+            background: #847CFB
+            border-radius: 6px 0px 0px 6px
+            z-index: 2
+            transition: 0.6s
+            transform: translateX(100%)    
+            &__active
+                transform: none
+            a
+                padding-right: 50px
+                display: block
+                font-weight: normal
+                font-size: 24px
+                line-height: 21px
+                color: #FFFFFF
+                margin-top: 30px
+    .header
+        &-bot
+            &__btn
+                width: 100%
+                p
+                    font-size: 14px
+            &__comp
+                margin-right: 5px
+                &-line
+                    width: 15px
+                    span
+                        width: 15px
+                        &::before
+                            width: 15px
+                            margin-left: -7.5px
+                        &::after
+                            width: 15px
+                            margin-left: -7.5px
+            &__search
+                margin-top: 15px
+                &-btn
+                    p
+                        font-size: 16px
+                    img
+                        width: 15px
+                        margin-right: 5px
+            &__login
+                img
+                    margin-right: 0
+                p
+                    display: none
+        &-product
+            top: -71px
+    .basic
+        background-size: 75%
+        background-position-y: bottom
+        &-title
+            font-size: 36px
+            line-height: 42px
+        &-subtitle
+            font-size: 14px
+    .product
+        margin-top: 50px
+        &-title
+            font-size: 28px
+            margin-bottom: 30px
+        &-slider
+            display: block
+            &__prev
+                margin-bottom: 15px
+            &__next
+                margin-bottom: 15px
+            &__block
+                height: 500px
+                width: 100%
+                margin-bottom: 30px
+                &-wrap
+                    height: 100%
+                    margin: 0
+                &-btn
+                    display: block
+                    margin-top: 20px
+    .catalog
+        margin-top: 50px
+        margin-bottom: 50px
+        &-btn
+            padding: 3px 0
+            &__brand
+                padding: 3px 0
+        &-card
+            justify-content: center
+            &__block
+                margin-top: 0
+                height: 465px
+                margin-right: 0
+                margin-bottom: 0
+                flex-basis: 100%
+                margin-bottom: 30px
+                &-wrap
+                    height: 100%
+                &-name
+                    margin-top: 20px
+                    margin-bottom: 10px
+                &-price
+                    font-size: 22px
+                &-info
+                    font-size: 12px
+                &-btn
+                    display: block
+                    margin-top: 20px
+        &-filter
+            &__wrap
+                &-form
+                    &-price
+                        width: 100%
+    .about
+        &-block
+            &__build
+                margin-bottom: 30px
+            &__title
+                font-size: 28px
+    .partners
+        &-block
+            &__logo
+                display: flex
+                justify-content: center
+                align-items: center
+            &__img
+                width: 120px
+                filter: grayscale(0%)
+    .map
+        height: 300px
+    .popup
+        z-index: 3
+        &-btns
+            &__btn
+                font-size: 18px
+                &-login
+                    margin-right: 15px
+        &-wrap
+            width: 85%
+            &__form
+                &-input
+                    margin-top: 15px
+                &-change
+                    margin-top: 15px
+                &-btn
+                    font-size: 16px
+                &-btn2
+                    margin-left: 15px
+    .delivery
+        margin-top: 50px
+        &-title
+            font-size: 28px
+        &-city
+            &__title
+                font-size: 22px
+            &__subtitle
+                font-size: 16px
+                margin-top: 15px
+                &:first-child
+                    margin-top: 15px
+            &__text
+                margin-top: 15px
+                font-size: 14px
+        &-pickup
+            &__title
+                font-size: 22px
+            &__subtitle
+                font-size: 16px
+                margin-top: 15px
+                margin-bottom: 15px
+            &__text
+                font-size: 14px
+    .profile
+        margin-top: 50px
+        margin-bottom: 50px
+        &-title
+            font-size: 28px
+        &-btns
+            &__btn
+                font-size: 18px
+                padding: 10px 0 10px 50px
+        &-info
+            padding-left: 0
+            padding-bottom: 0
+            margin-top: 30px
+            border-left: none
+        &-history
+            margin-top: 30px
+            padding-left: 0
+            padding-bottom: 0
+            border-left: none
+            &__info
+                &-text
+                    font-size: 10px
+                &-1
+                    margin-right: 10px
+                    min-width: 20px
+                    max-width: 20px
+                &-2
+                    min-width: 150px
+                    max-width: 150px
+                    margin-right: 10px
+                &-3
+                    min-width: 25px
+                    max-width: 25px
+                    margin-right: 10px
+                &-4
+                    min-width: 45px
+                    max-width: 45px
+                &-5
+                    min-width: 60px
+                    max-width: 60px
+            &__title
+                &-text
+                    margin-right: 10px
+                &-1
+                    font-size: 0
+                    &::before
+                        content: "\2116"
+                        font-size: 14px
+                &-2
+                    margin-right: 95px
+                &-3
+                    min-width: 45px
+                    max-width: 45px
+                    margin-right: 13px
+                &-4
+                    margin-right: 20px
+    .stand
+        margin-top: 50px
+        margin-bottom: 50px
+        &-title
+            font-size: 28px
+        &-price
+            margin-top: 15px
+        &-wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 20px
+        &-text
+            display: block
+            &__price
+                font-size: 24px
+            &__info
+                font-size: 12px
+                margin-left: 0
+                margin-bottom: 0
+        &-btn
+            margin-top: 0
+    .info
+        margin-top: 50px
+        margin-bottom: 50px
+        &-title
+            margin-bottom: 15px
+            font-size: 28px
+        &-text
+            font-size: 16px
+    .advantage
+        &-title
+            margin-bottom: 15px
+            font-size: 28px
+        &-subtitle
+            font-size: 16px
+        &-text
+            font-size: 18px
+            margin-bottom: 15px
+    .admin
+        margin-top: 50px
+        margin-bottom: 50px
+        &-title
+            font-size: 28px
+            margin-bottom: 25px
+        &-btn
+            padding: 16px 0px 16px 30px
+            font-size: 18px
+            &:first-child
+                margin-top: 25px
+        &-line
+            display: none
+        &-btns
+            margin-top: 10px
+            &-add
+                font-size: 18px
+                margin-left: 0
+                margin-bottom: 15px
+                &:last-child
+                    margin-bottom: 0
+        &-block
+            border-bottom: 1px solid #303030
+        &-history
+            margin-left: 0
+            &__block
+                display: block
+                &-img
+                    margin: 0 auto
+                    img
+                        margin: 0 auto
+                &-name
+                    margin-left: 0
+                    text-align: left
+                &-price
+                    text-align: left
+                &-quan
+                    margin-top: 5px
+                &-btn
+                    margin-top: 15px
+    .type
+        &-wrap
+            &-form
+                &__title
+                    font-size: 28px
+                &__input
+                    font-size: 18px
+                    width: 100%
+                &__btn
+                    padding: 8px 0
+                    font-size: 18px
+                    width: 135px
+                    &:first-child
+                        margin-right: 15px
+    .brand
+        &-wrap
+            &-form
+                &__title
+                    font-size: 28px
+                &__input
+                    font-size: 18px
+                    width: 100%
+                &__btn
+                    padding: 8px 0
+                    font-size: 18px
+                    width: 135px
+                    &:first-child
+                        margin-right: 15px
+    .product
+        &-wrap
+            &-form
+                &__title
+                    font-size: 24px
+                    line-height: normal
+                    margin-bottom: 30px
+                &__input
+                    width: 100%
+                    font-size: 18px
+                &__btns
+                    display: flex
+                    justify-content: space-between
+                &__btn
+                    padding: 8px 0
+                    font-size: 18px
+                    width: 135px
+                    &:first-child
+                        margin-right: 15px
+        &-slider
+            &__block
+                &-btn
+                    width: 100%
+    .device
+        &-popup
+            &-wrap
+                width: 300px
+                height: 390px
+                overflow: scroll
+        &-wrap
+            &-form
+                &__title
+                    font-size: 18px
+                    margin-bottom: 10px
+                &__input
+                    margin-bottom: 15px
+                    font-size: 14px
+                    width: 100%
+                &__btn
+                    width: 110px
+                    padding: 8px 0 8px 0
+                    font-size: 14px
+                    height: 45px
+                    &:first-child
+                        margin-right: 0
+                        margin-bottom: 10px
+                    &-delete
+                        width: 100%
+                        padding: 8px 25px 8px 25px
+                        font-size: 14px
+                &__block
+                    flex-direction: column
+                    align-items: normal
+                &__upload
+                    margin-bottom: 15px
+                &__1
+                    margin-right: 0
+                &__file
+                    padding: 5px 25px 5px 25px
+                    &-text
+                        margin-left: 5px
+                        font-size: 14px
+                &__components, &__company
+                    font-size: 14px
+                    width: 100%
+                    padding: 8px 0px 8px 8px
+                &__btnadd
+                    width: 100%
+                    font-size: 14px
+                    padding: 8px 0
+
+    .basket
+        margin-top: 50px
+        margin-bottom: 50px
+        &-img
+            height: 100px
+        &-text
+            flex-direction: column
+        &-name
+            font-size: 16px
+        &-price
+            font-size: 16px
+        &-q
+            font-size: 16px
+        &-box
+            &-total
+                margin-top: 20px
+    .orderpage
+        &-form
+            &__title
+                font-size: 28px
+                margin-bottom: 15px
+            &__input
+                width: 100%
+                font-size: 15px
+                margin-bottom: 15px
+                margin-right: 0
+            &__inputtwo
+                width: 100%
+                font-size: 15px
+                margin-bottom: 15px
+                &:last-child
+                    margin-left: 0
+            &__btnone, &__btntwo
+                padding: 10px 0
+                width: 135px
+                font-size: 15px
+                &:first-child
+                    margin-right: 0
+        &-wrap
+            &-form
+                &__title
+                    font-size: 28px
+                    margin-bottom: 15px
+                &__text
+                    font-size: 15px
+                    font-weight: 500
+                    margin-bottom: 10px
+                &__back
+                    width: 100%
+                    font-size: 15px
+                    margin-bottom: 15px
+    .review
+        &-title
+            font-size: 28px
+        &-block
+            &__text
+                text-align: justify
+            &__head
+                display: block
+            &__name
+                margin-bottom: 0
+            &__btn
+                font-size: 14px
+    .shop
+        margin-top: 50px
+        margin-bottom: 50px
+        &-title
+            font-size: 28px
+        &-history
+            margin-top: 30px
+            padding-left: 0
+            padding-bottom: 0
+            border-left: none
+            &__info
+                &-text
+                    font-size: 10px
+                &-1
+                    min-width: 10px
+                    max-width: 10px
+                    margin-right: 10px
+                &-2
+                    min-width: 120px
+                    max-width: 120px
+                    margin-right: 10px
+                &-3
+                    min-width: 60px
+                    max-width: 60px
+                    margin-right: 10px
+                &-4
+                    min-width: 45px
+                    max-width: 45px
+                    margin-right: 10px
+                &-5
+                    min-width: 65px
+                    max-width: 65px
+            &__title
+                &-text
+                    margin-right: 10px
+                &-1
+                    margin-right: 5px
+                &-2
+                    margin-right: 90px
+                &-3
+                    margin-right: 15px
+                &-4
+                    margin-right: 20px
+            &__title-1
+                font-size: 0
+                &::before
+                    content: "\2116"
+                    font-size: 14px
+    .more-info
+        &__form
+            &-back
+                width: 100%
+            &-btns
+                width: 100%
+            &-btntwo
+                width: 100%
